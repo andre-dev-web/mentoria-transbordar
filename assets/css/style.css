@@ -1,3 +1,23 @@
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 1rem;
+  background: #FFF3E4;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #CD9856;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ee972d;
+}
+
+::-webkit-scrollbar-track {
+  background: #FBFBFB;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -13,12 +33,12 @@ body {
 }
 
 a {
-  color: #EF7D29;
+  color: #CD9856;
   text-decoration: none;
 }
 
 a:hover {
-  color: #C96720;
+  color: #ee972d;
   text-decoration: none;
 }
 
@@ -50,8 +70,8 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #EF7D29;
-  border-top-color: #d2f9eb;
+  border: 6px solid #CD9856;
+  border-top-color: #FFF3E4;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -78,7 +98,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #EF7D29;
+  background: #CD9856;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -92,7 +112,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #C96720;
+  background: #ee972d;
   color: #fff;
 }
 
@@ -200,7 +220,7 @@ h6 {
   height: 2px;
   bottom: 3px;
   left: 30px;
-  background-color: #C96720;
+  background-color: #ee972d;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -288,7 +308,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #C96720;
+  color: #ee972d;
 }
 
 .navbar-mobile .getstarted,
@@ -330,7 +350,7 @@ h6 {
 .navbar-mobile .dropdown .dropdown ul a:hover,
 .navbar-mobile .dropdown .dropdown ul .active:hover,
 .navbar-mobile .dropdown .dropdown ul li:hover>a {
-  color: #C96720;
+  color: #ee972d;
 }
 
 .navbar-mobile .dropdown>.dropdown-active,
@@ -368,7 +388,7 @@ h6 {
 
 #hero h1 span {
   color: #fff;
-  border-bottom: 4px solid #EF7D29;
+  border-bottom: 4px solid #CD9856;
 }
 
 #hero h2 {
@@ -387,11 +407,11 @@ h6 {
   border-radius: 50px;
   transition: 0.5s;
   color: #fff;
-  background: #EF7D29;
+  background: #CD9856;
 }
 
 #hero .btn-get-started:hover {
-  background: #C96720;
+  background: #ee972d;
 }
 
 #hero .animated {
@@ -537,7 +557,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #EF7D29;
+  background: #CD9856;
   margin: 4px 10px;
 }
 
@@ -618,14 +638,14 @@ section {
 --------------------------------------------------------------*/
 
 .counts {
-  background: #f5f5ff;
+  background: #FFF3E4;
   padding: 70px 0 60px;
 }
 
 .icon-square{
   width: 50px;
   height: 50px;
-  background: #EF7D29;
+  background: #CD9856;
   border-radius: 50%;
 }
 
@@ -653,7 +673,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 20px;
-  background: #EF7D29;
+  background: #CD9856;
   padding: 12px;
   color: #fff;
   border-radius: 50px;
@@ -689,7 +709,7 @@ section {
 .details .content h3 {
   font-weight: 600;
   font-size: 26px;
-  color: #EF7D29;
+  color: #CD9856;
 }
 
 .details .content ul {
@@ -704,7 +724,7 @@ section {
 .details .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #EF7D29;
+  color: #CD9856;
 }
 
 .details .content p:last-child {
@@ -716,20 +736,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/cta-bg.jpg") no-repeat;
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-
-.testimonials::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background-color: #FFF3E4;
 }
 
 .testimonials .section-header {
@@ -804,7 +811,7 @@ section {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #EF7D29;
+  background-color: #CD9856;
 }
 
 @media (min-width: 1024px) {
@@ -817,6 +824,14 @@ section {
   .testimonials .testimonial-item p {
     width: 80%;
   }
+}
+
+.depoimentos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
 }
 
 /*--------------------------------------------------------------
@@ -843,22 +858,42 @@ section {
 }
 
 .pricing h4 {
-  font-size: 36px;
-  color: #EF7D29;
+  font-size: 40px;
+  color: #CD9856;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
 }
 
 .pricing h4 sup {
-  font-size: 20px;
+  font-size: 24px;
   top: -15px;
   left: -3px;
 }
 
 .pricing h4 span {
   color: #bababa;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.pricing h5 {
+  font-size: 30px;
+  color: #CD9856;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.pricing h5 sup {
+  font-size: 14px;
+  top: -15px;
+  left: -3px;
+}
+
+.pricing h5 span {
+  color: #bababa;
+  font-size: 10px;
   font-weight: 300;
 }
 
@@ -876,7 +911,7 @@ section {
 }
 
 .pricing ul i {
-  color: #EF7D29;
+  color: #CD9856;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -888,15 +923,15 @@ section {
 
 .pricing .btn-wrap {
   margin: 20px -20px -20px -20px;
-  padding: 20px 15px;
+  padding: 40px 30px;
   background: #f8f8f8;
   text-align: center;
 }
 
 .pricing .btn-buy {
-  background: #EF7D29;
+  background: #CD9856;
   display: inline-block;
-  padding: 8px 35px 10px 35px;
+  padding: 16px 70px 16px 70px;
   border-radius: 50px;
   color: #fff;
   transition: none;
@@ -908,12 +943,12 @@ section {
 }
 
 .pricing .btn-buy:hover {
-  background: #C96720;
+  background: #ee972d;
 }
 
 .pricing .featured h3 {
   color: #fff;
-  background: #EF7D29;
+  background: #CD9856;
 }
 
 .pricing .advanced {
@@ -925,7 +960,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #EF7D29;
+  background: #CD9856;
   color: #fff;
 }
 
@@ -969,7 +1004,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #EF7D29;
+  color: #CD9856;
 }
 
 .faq .faq-list .icon-show,
@@ -994,7 +1029,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #EF7D29;
+  color: #CD9856;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1069,10 +1104,10 @@ section {
 .btn-primary {
   border-radius: 50px;
   border: none;
-  background: #EF7D29;
+  background: #CD9856;
 }
 .btn-primary:hover {
-  background: #C96720;
+  background: #ee972d;
 }
 
 
@@ -1084,16 +1119,16 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: black;
+  background: #FFF3E4;
   padding: 0 0 30px 0;
-  color: #fff;
+  color: #000;
   font-size: 14px;
 }
 
 
 
 #footer .copyright {
-  border-top: 1px solid black;
+  border-top: 1px solid #FFF3E4;
   text-align: center;
   padding-top: 30px;
 }
